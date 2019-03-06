@@ -1,0 +1,195 @@
+body {
+    background: #454545;
+    color: #eee;
+    line-height: 1.7;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
+
+.side {
+    float: left;
+    width: 20%;
+}
+
+.side > * {
+    padding: 30px;
+}
+
+.logo {
+    line-height: 1;
+    border: 5px solid #eee;
+    padding: 10px 20px;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: background-color 1s;
+}
+
+.logo:hover {
+    background-color: #aaa;
+}
+
+.main {
+    float: right;
+    width: 80%;
+}
+
+.calcArea {
+    margin-right: 30%;
+    background: #fff;
+}
+
+.InputArea {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ini1 ini2 . op1 op2"
+                         "ini3 ini4 . op3 op4";
+    justify-items: center;
+}
+
+#ini01 {
+    grid-area: ini1;
+}
+
+#ini02 {
+    grid-area: ini2;    
+}
+
+#ini03 {
+    grid-area: ini3;   
+}
+
+#ini04 {   
+    grid-area: ini4;
+
+}
+
+#op01 {
+    grid-area: op1;
+}
+
+#op02{
+    grid-area: op2;    
+}
+
+#op03 {
+    grid-area: op3;
+}
+
+#op04 {
+    grid-area: op4;
+}
+
+.OutputArea {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-areas:  "E1 O1 E2 eq1 R1"
+                          "E3 O2 E4 eq2 R2"
+                          "E5 O3 E5 eq3 R3"; */
+    justify-items: center;
+}
+
+/* #E01 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#E02 {
+    grid-row: 1;
+    grid-column: 3;
+} */
+/* 
+#E03 {grid-area: E3;}
+#E04 {grid-area: E4;}
+#E05 {grid-area: E5;}
+#E06 {grid-area: E6;}
+#O01 {grid-area: O1;}
+#O02 {grid-area: O2;}
+#O03 {grid-area: O3;}
+#R01 {grid-area: R1;}
+#R02 {grid-area: R2;}
+#R03 {grid-area: R3;}
+#eq01 {grid-area: eq1;}
+#eq02 {grid-area: eq2;}
+#eq03 {grid-area: eq3;} */
+
+button {
+    display: inline-block;
+    background: #444;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+    box-shadow: inset 0px 1px 2px #8b8b8b, inset 0px -1px 0px #3d3d3d, inset 0px -2px 3px #8b8b8b;
+}
+
+
+.operator,
+#O1,#O2,#O3 {
+    width: 60px;
+}
+
+button:hover {
+    display: inline-block;
+    background: #666;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+    box-shadow: inset 0px 1px 2px #8b8b8b, inset 0px -1px 0px #3d3d3d, inset 0px -2px 3px #8b8b8b;
+    transition: 500ms;
+}
+.operator:hover,
+#O1:hover,#O2:hover,#O3:hover {
+    display: inline-block;
+    background: #666;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+    box-shadow: inset 0px 1px 2px #8b8b8b, inset 0px -1px 0px #3d3d3d, inset 0px -2px 3px #8b8b8b;
+    transition: 500ms;
+}
+button:disabled {
+    display: inline-block;
+    background: #fff;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+    box-shadow: inset 0px 1px 2px #8b8b8b, inset 0px -1px 0px #3d3d3d, inset 0px -2px 3px #8b8b8b;
+}

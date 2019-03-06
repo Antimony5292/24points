@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/desktop.css">
+    <title> 媛媛的24点</title>
+</head>
+<body>
+    <div class="side">
+        <div class="logo">
+            <a href="index.html">Yuan's 24</a>
+        </div>
+        <div class="res">
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <div class="lea">
+            <button id="leap" onclick="location.reload()">Leap</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="calcArea">
+            <div class="InputArea">
+                <div id="ini01"><button class="num" id="ini1" onclick="iniclick(1)"></button></div>
+                <div id="ini02"><button class="num" id="ini2" onclick="iniclick(2)"></button></div>
+                <div id="ini03"><button class="num" id="ini3" onclick="iniclick(3)"></button></div>
+                <div id="ini04"><button class="num" id="ini4" onclick="iniclick(4)"></button></div>
+                <div id="op01"><button class="operator" id="op1" onclick="opclick(1)">+</button></div>
+                <div id="op02"><button class="operator" id="op2" onclick="opclick(2)">-</button></div>
+                <div id="op03"><button class="operator" id="op3" onclick="opclick(3)">×</button></div>
+                <div id="op04"> <button class="operator" id="op4" onclick="opclick(4)">÷</button></div>
+            </div>
+            <hr>
+            <div class="OutputArea">
+                <div id="E01"><button class="line1" id="E1" disabled=true onclick="eleclick(1)"></button></div>
+                <div id="O01"><button class="line1" id="O1" disabled=true onclick="Oclick(1)"></button></div>
+                <div id="E02"><button class="line1" id="E2" disabled=true onclick="eleclick(2)"></button></div>
+                <div id="eq01"><button class=eq id=eq1 onclick="eqclick(1)">=</button></div>
+                <div id="R01"><button class="line1" id="R1" disabled=true onclick="Rclick(1)"></button></div>
+                <div id="E03"><button class="line2" id="E3" disabled=true onclick="eleclick(3)"></button></div>
+                <div id="O02"><button class="line2" id="O2" disabled=true onclick="Oclick(2)"></button></div>
+                <div id="E04"><button class="line2" id="E4" disabled=true onclick="eleclick(4)"></button></div>
+                <div id="eq02"><button class=eq id=eq2 onclick="eqclick(2)">=</button></div>
+                <div id="R02"><button class="line2" id="R2" disabled=true onclick="Rclick(2)"></button></div>
+                <div id="E05"><button class="line3" id="E5" disabled=true onclick="eleclick(5)"></button></div>
+                <div id="O03"><button class="line3" id="O3" disabled=true onclick="Oclick(3)"></button></div>
+                <div id="E06"><button class="line3" id="E6" disabled=true onclick="eleclick(6)"></button></div>
+                <div id="eq03"><button class=eq id=eq3 onclick="eqclick(3)">=</button></div>
+                <div id="R03"><button class="line3" id="R3" disabled=true></button></div>
+            </div>
+        </div>
+    </div>
+    <script src=24point.js></script>    
+</body>
+</html>
